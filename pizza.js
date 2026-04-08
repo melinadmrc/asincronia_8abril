@@ -2,7 +2,7 @@ export function hacerPizza(quemada) {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
       if (quemada) {
-        reject("¡Oh no, carbón! =(");
+        reject("¡Oh no, se quemó! =(");
       } else {
         resolve("¡Pizza caliente! =)");
       }
