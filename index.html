@@ -1,36 +1,47 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ejercicios 8 abril</title>
-  </head>
-  <body>
-    <h1>Ejercicios</h1>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ejercicios JavaScript</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <main class="contenedor">
+    <h1>Ejercicios de JavaScript</h1>
 
-    <hr />
+    <section class="card">
+      <h2>1. El Robot Saludador</h2>
+      <button id="btnSaludo">Saludar</button>
+      <p id="resSaludo" class="resultado"></p>
+    </section>
 
-    <h2>1. El Robot Saludador</h2>
-    <button id="btnSaludo">Saludar</button>
-    <p id="resSaludo"></p>
+    <section class="card">
+      <h2>2. La Caja Sorpresa</h2>
+      <input type="text" id="inputTexto" placeholder="Escribe una palabra" />
+      <button id="btnGritar">Gritar</button>
+      <p id="resGritar" class="resultado"></p>
+    </section>
 
-    <h2>2. La Caja Sorpresa</h2>
-    <input type="text" id="inputTexto" placeholder="Escribe una palabra" />
-    <button id="btnGritar">Gritar</button>
-    <p id="resGritar"></p>
+    <section class="card">
+      <h2>3. El Horno de Pizza</h2>
+      <button id="btnPizza">Hacer pizza</button>
+      <p id="resPizza" class="resultado"></p>
+    </section>
 
-    <h2>3. El Horno de Pizza</h2>
-    <button id="btnPizza">Hacer pizza</button>
-    <p id="resPizza"></p>
+    <section class="card">
+      <h2>4. La Máquina del Tiempo</h2>
+      <button id="btnTiempo">Viajar al futuro</button>
+      <p id="resTiempo" class="resultado"></p>
+    </section>
 
-    <h2>4. La Máquina del Tiempo</h2>
-    <button id="btnTiempo">Viajar al futuro</button>
-    <p id="resTiempo"></p>
+    <section class="card">
+      <h2>5. El Menú del Restaurante</h2>
+      <button id="btnComida">Pedir comida</button>
+      <p id="resComida" class="resultado"></p>
+    </section>
+  </main>
 
-    <h2>5. El Menú del Restaurante</h2>
-    <button id="btnComida">Pedir comida</button>
-    <p id="resComida"></p>
-
-    <script type="module" src="./main.js"></script>
-  </body>
+  <script type="module" src="./main.js"></script>
+</body>
 </html>
