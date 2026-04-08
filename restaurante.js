@@ -4,9 +4,9 @@ export function pedirComida() {
       const hayIngredientes = Math.random() < 0.7;
 
       if (hayIngredientes) {
-        resolve("Tu plato está servido");
+        resolve("Tu plato está listo");
       } else {
-        reject("El restaurante se quedó sin ingredientes");
+        reject("So sorry, el restaurante se quedó sin ingredientes");
       }
     }, 2000);
   });
