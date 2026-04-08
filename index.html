@@ -2,122 +2,13 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Ejercicios JS</title>
-  <style>
-    body {
-      font-family: Arial;
-      padding: 20px;
-      background: #f4f6f8;
-    }
-    button {
-      margin: 10px 0;
-      padding: 10px 15px;
-      border: none;
-      background: #007bff;
-      color: white;
-      cursor: pointer;
-      border-radius: 5px;
-    }
-    button:hover {
-      background: #0056b3;
-    }
-    #output {
-      margin-top: 20px;
-      padding: 15px;
-      background: white;
-      border-radius: 5px;
-      min-height: 50px;
-    }
-  </style>
+  <title>Robot Saludador</title>
 </head>
 <body>
 
-  <h1>Ejercicios JavaScript 🚀</h1>
+  <h1 id="mensaje"></h1>
 
-  <button onclick="robotSaludo()">1. Robot Saludador</button><br>
-  <button onclick="cajaSorpresa()">2. Caja Sorpresa</button><br>
-  <button onclick="hornoPizza()">3. Horno de Pizza</button><br>
-  <button onclick="maquinaTiempo()">4. Máquina del Tiempo</button><br>
-  <button onclick="restaurante()">5. Restaurante</button>
-
-  <div id="output"></div>
-
-  <script>
-    const output = document.getElementById("output");
-
-    // 1️⃣ Robot Saludador
-    function saludar() {
-      return "¡Hola, Humano!";
-    }
-
-    function robotSaludo() {
-      output.innerText = saludar();
-    }
-
-    // 2️⃣ Caja Sorpresa
-    function cajaSorpresa() {
-      try {
-        let palabra = prompt("Escribe una palabra:");
-        output.innerText = palabra.toUpperCase();
-      } catch (error) {
-        output.innerText = "¡Eso no es una palabra, es un número!";
-      }
-    }
-
-    // 3️⃣ Horno de Pizza
-    function cocinarPizza(quemada) {
-      return new Promise((resolve, reject) => {
-        if (!quemada) {
-          resolve("🍕 ¡Pizza caliente!");
-        } else {
-          reject("🔥 ¡Oh no, carbón!");
-        }
-      });
-    }
-
-    function hornoPizza() {
-      cocinarPizza(false)
-        .then(res => output.innerText = res)
-        .catch(err => output.innerText = err);
-    }
-
-    // 4️⃣ Máquina del Tiempo
-    function viajarEnElTiempo() {
-      return new Promise(resolve => {
-        setTimeout(() => {
-          resolve("⏳ ¡He vuelto del futuro!");
-        }, 2000);
-      });
-    }
-
-    async function maquinaTiempo() {
-      output.innerText = "Viajando...";
-      const mensaje = await viajarEnElTiempo();
-      output.innerText = mensaje;
-    }
-
-    // 5️⃣ Restaurante
-    function traerComida() {
-      return new Promise((resolve, reject) => {
-        const hayComida = true;
-
-        if (hayComida) {
-          resolve("🍝 Aquí tienes tu comida");
-        } else {
-          reject("❌ No hay ingredientes");
-        }
-      });
-    }
-
-    async function restaurante() {
-      try {
-        const plato = await traerComida();
-        output.innerText = plato;
-      } catch (error) {
-        output.innerText = error;
-      }
-    }
-  </script>
+  <script type="module" src="./main.js"></script>
 
 </body>
 </html>
