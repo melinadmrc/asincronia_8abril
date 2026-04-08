@@ -20,7 +20,7 @@ body {
 h1 {
   text-align: center;
   margin-bottom: 30px;
-  color: #2c2c7a;
+  color: #194476;
 }
 
 .card {
@@ -48,11 +48,11 @@ input {
 }
 
 input:focus {
-  border-color: #6c7bff;
+  border-color: #486487;
 }
 
 button {
-  background-color: #6c7bff;
+  background-color: #184b9c;
   color: white;
   border: none;
   padding: 12px 18px;
@@ -63,7 +63,7 @@ button {
 }
 
 button:hover {
-  background-color: #5563e6;
+  background-color: #364e83;
   transform: translateY(-2px);
 }
 
@@ -74,5 +74,5 @@ button:hover {
   border-radius: 10px;
   min-height: 20px;
   font-weight: bold;
-  color: #333;
+  color: #4286cb;
 }
